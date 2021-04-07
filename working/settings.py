@@ -47,7 +47,7 @@ SIMPLE_JWT = {
     'ROTATE_REFRESH_TOKENS': True,
     'BLACKLIST_AFTER_ROTATION': False,
     'ALGORITHM': 'HS256',
-    'SIGNING_KEY': '4rq1*w#u!4ew5f-d7+xa#x4ne12*cqerqwer42rf#0u8wa6yvm$',
+    'SIGNING_KEY': '4rq1*w#u!4ew5f-d7+xa#x4ne12*cqerqwer42rf#0u8wa$',
     'VERIFYING_KEY': None,
     'AUTH_HEADER_TYPES': ('JWT',),
     'USER_ID_FIELD': 'email',

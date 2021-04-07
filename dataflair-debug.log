@@ -1,0 +1,23 @@
+Watching for file changes with StatReloader
+Waiting for apps ready_event.
+Apps ready_event triggered. Sending autoreload_started signal.
+Watching dir C:\Users\rk409\PycharmProjects\Django_projects\working\locale with glob **/*.mo.
+Watching dir C:\Users\rk409\PycharmProjects\Django_projects\auto\lib\site-packages\rest_framework\locale with glob **/*.mo.
+Watching dir C:\Users\rk409\PycharmProjects\Django_projects\auto\lib\site-packages\django\contrib\admin\locale with glob **/*.mo.
+Watching dir C:\Users\rk409\PycharmProjects\Django_projects\auto\lib\site-packages\django\contrib\auth\locale with glob **/*.mo.
+Watching dir C:\Users\rk409\PycharmProjects\Django_projects\auto\lib\site-packages\django\contrib\contenttypes\locale with glob **/*.mo.
+Watching dir C:\Users\rk409\PycharmProjects\Django_projects\auto\lib\site-packages\django\contrib\sessions\locale with glob **/*.mo.
+Watching dir C:\Users\rk409\PycharmProjects\Django_projects\auto\lib\site-packages\django\contrib\messages\locale with glob **/*.mo.
+Watching dir C:\Users\rk409\PycharmProjects\Django_projects\auto\lib\site-packages\django\contrib\staticfiles\locale with glob **/*.mo.
+Watching dir C:\Users\rk409\PycharmProjects\Django_projects\working\users\locale with glob **/*.mo.
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.043) SELECT "users_user"."id", "users_user"."password", "users_user"."last_login", "users_user"."is_superuser", "users_user"."username", "users_user"."first_name", "users_user"."last_name", "users_user"."email", "users_user"."is_staff", "users_user"."is_active", "users_user"."date_joined", "users_user"."empAddress" FROM "users_user" WHERE "users_user"."username" = 'rk40'; args=('rk40',)
+(0.026) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2021-04-07 13:09:13.630223' AND "django_session"."session_key" = 'ixox9ve7o0vnzd2o5p6gd61ntxpx4625'); args=('2021-04-07 13:09:13.630223', 'ixox9ve7o0vnzd2o5p6gd61ntxpx4625')
+(0.112) UPDATE "users_user" SET "last_login" = '2021-04-07 13:09:13.685209' WHERE "users_user"."id" = 5; args=('2021-04-07 13:09:13.685209', 5)
+(0.000) BEGIN; args=None
+(0.004) UPDATE "django_session" SET "session_data" = 'ZGI0OGJkY2ZiNjk0YTIwYmVmMTJmMWQ0YjVlMzFhMmNmNWIxNzUyNDp7Il9hdXRoX3VzZXJfaWQiOiI1IiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiIyYTRjY2EyNTI4ZGMzOWZmZjBjMjAzNmRlZGE4MzBmZjJhNWVkZGMyIn0=', "expire_date" = '2021-04-21 13:09:14.062737' WHERE "django_session"."session_key" = 'ixox9ve7o0vnzd2o5p6gd61ntxpx4625'; args=('ZGI0OGJkY2ZiNjk0YTIwYmVmMTJmMWQ0YjVlMzFhMmNmNWIxNzUyNDp7Il9hdXRoX3VzZXJfaWQiOiI1IiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiIyYTRjY2EyNTI4ZGMzOWZmZjBjMjAzNmRlZGE4MzBmZjJhNWVkZGMyIn0=', '2021-04-21 13:09:14.062737', 'ixox9ve7o0vnzd2o5p6gd61ntxpx4625')
+"POST /api/login/ HTTP/1.1" 200 62

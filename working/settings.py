@@ -32,7 +32,8 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'rest_framework',
-    'django.contrib.admin',
+    'corsheaders',
+    #'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
@@ -40,7 +41,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'users',
 ]
-AUTH_USER_MODEL = 'users.User'
+#AUTH_USER_MODEL = 'users.User'
+AUTH_USER_MODEL='users.EmpTable'
 SIMPLE_JWT = {
     'ACCESS_TOKEN_LIFETIME': timedelta(minutes=5),
     'REFRESH_TOKEN_LIFETIME': timedelta(days=14),
@@ -69,6 +71,8 @@ REST_FRAMEWORK = {
 
 
 MIDDLEWARE = [
+    'corsheaders.middleware.CorsMiddleware',
+    'django.middleware.common.CommonMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -101,6 +105,7 @@ WSGI_APPLICATION = 'working.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
+CORS_ALLOW_ALL_ORIGINS=True
 
 DATABASES = {
     'default': {
@@ -109,7 +114,7 @@ DATABASES = {
     }
 }
 
-
+AUTHENTICATION_BACKENDS = ( 'users.backend.MyCustomBackend', 'django.contrib.auth.backends.ModelBackend',)
 # Password validation
 # https://docs.djangoproject.com/en/2.2/ref/settings/#auth-password-validators
 
